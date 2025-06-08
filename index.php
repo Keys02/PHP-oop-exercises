@@ -3,7 +3,7 @@
     include_once __DIR__ . '/Pet.php';
 
     $cat1 = new Cat();
-    $pet1 = new Pet();
+    $pet1 = new Pet('Fifi');
     
     $cat1->name = 'Mr Fluffy';
     $cat1->breed = 'long-haired mix';
@@ -13,6 +13,4 @@
     print $cat1->breed . PHP_EOL;
     print $cat1->age . PHP_EOL;
 
-    $pet1 = new Pet();
-    $pet1->setName('Fifi');
-    echo $pet1->getName();
+    print $pet1->getName();

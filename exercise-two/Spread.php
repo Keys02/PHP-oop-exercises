@@ -1,9 +1,12 @@
 <?php
     abstract class Spread
     {
-        protected string $productName;
-        protected float $weight;
         public int $shelfLifeMonths = 12;
+
+        public function __construct(
+            protected string $productName,
+            protected float $weight
+        ){}
 
         public function getProductName() {
             return $this->productName;

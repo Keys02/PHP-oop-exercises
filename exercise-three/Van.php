@@ -13,4 +13,9 @@
         public function getCommercialTax() : bool {
             return $this->commercialTax;
         }
+
+        public function __toString() {
+            $commercialTaxString = ($this->commercialTax) ? "has a commercial tax" : "has no commercial tax";
+            return "Van with $this->numDoors doors and $this->fuel as fuel $commercialTaxString";
+        }
     }

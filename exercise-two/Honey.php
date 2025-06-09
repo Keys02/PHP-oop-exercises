@@ -1,7 +1,7 @@
 <?php
     class Honey extends Spread
     {
-        public $isManuka = false;
+        public bool $isManuka = false;
 
         public function __toString() {
             $manukaString = ($this->isManuka) ? "(Manuka)" : "(NOT Manuka)";

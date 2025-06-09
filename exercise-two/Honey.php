@@ -9,6 +9,7 @@
         }
 
         public function __toString() {
-            return "HONEY: Clear Honey ({$this->weight}g) keeps for $this->shelfLifeMonths" . (!$this->isManuka) ? "(Manuka)" : "(NOT Manuka)";
+            $manukaString = ($this->isManuka) ? "(Manuka)" : "(NOT Manuka)";
+            return "HONEY: $this->productName Honey ({$this->weight}g) keeps for $this->shelfLifeMonths " . $manukaString;
         }
     }

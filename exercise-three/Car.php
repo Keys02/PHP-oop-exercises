@@ -2,7 +2,7 @@
     class Car
     {
         public function __construct(int $numDoors, string $fuel, private int $numSeats, private float $roadTax) {
-            Vehicle::__construct($numDoors, $fuel);
+            Vehicle::__construct($numDoors, $fuel); //Augmenting the __construct method in the Vehicle class 
             $this->numSeats = $numSeats;
             $this->roadTax = $roadTax;
         }

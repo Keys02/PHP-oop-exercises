@@ -1,14 +1,14 @@
 <?php
-    class Jam extends Spread
+    class Honey extends Spread
     {
-        public int $sweetness;
+        public $isManuka = false;
 
         public function __construct(string $productName, float $weight) {
             $this->productName = $productName;
             $this->weight = $weight;
         }
-        
+
         public function __toString() {
-            return "JAM: $this->productName ($this->weight) keeps for $this->shelfLifeMonths months: sweetness $this->sweetness";
+            return "HONEY: Clear Honey ({$this->weight}g) keeps for $this->shelfLifeMonths" . (!$this->isManuka) ? "(Manuka)" : "(NOT Manuka)";
         }
     }

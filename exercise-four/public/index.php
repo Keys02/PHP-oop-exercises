@@ -9,7 +9,7 @@
     $faker = Factory::create();
 
     // Randomn names as an underlined topic
-    echo str_pad("Random names", 20, " ", STR_PAD_LEFT) . PHP_EOL;
+    echo str_pad("Random names", 20, " ", STR_PAD_LEFT) , PHP_EOL;
     echo str_pad("", 30, "---", STR_PAD_BOTH), PHP_EOL;
 
     for($i = 1; $i <= 10; $i++) {

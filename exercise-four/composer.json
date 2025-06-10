@@ -1,0 +1,8 @@
+{
+    "name": "oop-exercise/four",
+    "autoload": {
+        "psr-4": {
+            "Mattsmithdev\\": "src"
+        }
+    }
+}
